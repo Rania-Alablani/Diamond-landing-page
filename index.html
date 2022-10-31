@@ -1,0 +1,173 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rania's Diamonds</title>
+    <!-- Load Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Load Styles -->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- IDs are only used for sections to connect menu achors to sections -->
+    <main>
+<header class="nav">
+      <nav class="navbar">
+        <!--I'll use JS to add the section to the navbar :) -->
+        <ul id="navbar__list">
+        </ul>
+      </nav>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and
+       a data attribute that will populate the li node.
+       Adding more sections will automatically populate nav.
+       The first section is set to active class by default -->
+<section class="home" id="section1" data-nav="Section 1">
+    <div class="content">
+        <h3>Fancy jewelry</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laborum ut minus corrupti dolorum dolore assumenda iste voluptate dolorem pariatur.</p>
+        <a href="#" class="btn">Buy now</a>
+    </div>
+</section>
+
+<section class="about"  id="section2" data-nav="Section 2">
+    <h1 class="heading"> about us </h1>
+    <div class="row">
+        <div class="content">
+            <h3>About Rania's Diamonds?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cumque sit nemo pariatur corporis perspiciatis aspernatur a ullam repudiandae autem asperiores quibusdam omnis commodi alias repellat illum, unde optio temporibus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ea est commodi incidunt magni quia molestias perspiciatis, unde repudiandae quidem.</p>
+        </div>
+    </div>
+</section>
+
+<section class="features" id="section3" data-nav="Section 3">
+      <div class="feature">
+          <img src="images/gift.png" alt="gift">
+          <div class="info">
+              <h3>offers & gifts</h3>
+              <span>on all orders</span>
+          </div>
+      </div>
+
+    <div class="feature">
+        <img src="images/free-delivery.png" alt="delivery">
+        <div class="info">
+            <h3>free delivery</h3>
+            <span>on all orders over 500SR</span>
+        </div>
+    </div>
+
+    <div class="feature">
+        <img src="images/return-money.png" alt="money">
+        <div class="info">
+            <h3>2 weeks returns</h3>
+            <span>moneyback guarantee</span>
+        </div>
+    </div>
+
+    <div class="feature">
+        <img src="images/credit-card.png" alt="credit card">
+        <div class="info">
+            <h3>secure paymens</h3>
+            <span>protected by paypal</span>
+        </div>
+    </div>
+</section>
+
+<section class="offers" id="section4" data-nav="Section 4">
+    <h1 class="heading"> Our Offers</h1>
+    <div class="box-container">
+      <div class="box">
+          <div class="image">
+              <img src="images/product-1.jpg" alt="necklace">
+          </div>
+          <div class="content">
+              <h3>Fancy Necklace</h3>
+              <div class="price"> 1,500SR <span>2,000SR</span> </div>
+          </div>
+      </div>
+
+      <div class="box">
+          <div class="image">
+              <img src="images/product-2.jpg" alt="ring">
+          </div>
+          <div class="content">
+              <h3>Fancy Ring</h3>
+              <div class="price"> 1,500SR <span>2,000SR</span> </div>
+          </div>
+      </div>
+
+      <div class="box">
+          <div class="image">
+              <img src="images/product-3.jpg" alt="ring">
+          </div>
+          <div class="content">
+              <h3>Fancy Ring</h3>
+            <div class="price"> 1,500SR <span>2,000SR</span> </div>
+          </div>
+      </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/product-4.jpg" alt="necklace">
+            </div>
+            <div class="content">
+                <h3>Fancy Necklace</h3>
+              <div class="price"> 1,500SR <span>2,000SR</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/product-5.jpg" alt="ring">
+            </div>
+            <div class="content">
+                <h3>Fancy Ring</h3>
+                <div class="price"> 1,500SR <span>2,000SR</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/product-6.jpg" alt="necklace">
+            </div>
+            <div class="content">
+                <h3>Fancy Necklace</h3>
+                <div class="price"> 1,500SR <span>2,000SR</span> </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr>
+</main>
+<section class="footer" id="section5" data-nav="Section 5">
+    <div class="footer-container">
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#">Profile</a>
+            <a href="#">Track Order</a>
+        </div>
+        <div class="box">
+            <h3>locations</h3>
+            <a href="#">Saudi Arabia</a>
+            <a href="#">UK</a>
+        </div>
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#">0500244119</a>
+            <a href="#">raniaalablani@gmail.com</a>
+        </div>
+    </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+</section>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

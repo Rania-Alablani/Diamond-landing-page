@@ -1,0 +1,330 @@
+/*
+ *
+ * CSS written based on SMACSS architecture.
+ * To learn more, visit: http://smacss.com/
+ *
+ * For simplicity, no reset or normalize is added.
+ * To learn more, visit: https://css-tricks.com/reboot-resets-reasoning/
+ *
+*/
+
+/* ---- Base Rules ---- */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+html{
+    font-size: 60%;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+section{
+    padding:2rem 9%;
+}
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color:#333;
+    padding:1rem;
+    margin:2rem 0;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background:#D3DFE1;
+    color:#333;
+    padding:.8rem 3rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.btn:hover{
+    background: #333;
+    color: #D3DFE1;
+}
+
+/* ---- Module Rules ---- */
+
+/* Navigation Styles*/
+#navbar__list {
+    padding: 1.5rem 10%;
+    display: flex;
+    background-color: #D3DFE1;
+    position: fixed;
+    width: 100vw;
+    margin: 0 auto;
+    z-index: 1000;
+}
+#navbar__list li {
+    list-style-type: none;
+}
+#navbar__list li a {
+  font-size: 1.8em;
+  padding: 10px 20px;
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+#navbar__list li a:hover {
+  color: #000;
+  font-weight: bold;
+}
+
+/* Footer Styles */
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    flex:1 1 30%;
+    border-radius: .5rem;
+    position: relative;
+}
+.footer-container .box{
+    flex:1 1 30%;
+    border-radius: .5rem;
+    position: relative;
+}
+.footer h3{
+    color:#000;
+    font-size: 2.5rem;
+    padding:1rem 0;
+}
+.footer a{
+    display: block;
+    color:#000;
+    font-size: 1.5rem;
+    padding:1rem 0;
+}
+
+/* ---- Theme Rules ---- */
+/* Home Styles */
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background:url(../images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .content{
+    max-width: 50rem;
+}
+.home h3{
+    font-size: 5rem;
+    color:#D3DFE1;
+}
+.home p{
+    font-size: 1.5rem;
+    color:#fff;
+    padding:1rem 0;
+    line-height: 1.5;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    flex-wrap: wrap;
+    padding:2rem 0;
+    padding-bottom: 3rem;
+}
+
+/* About Styles */
+.about h3{
+    font-size: 3rem;
+    color:#333;
+}
+.about p{
+    font-size: 1.5rem;
+    color:#999;
+    padding:.5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
+/* Features Styles */
+.features{
+    background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.features img{
+    height:5rem;
+    margin-right: 2rem;
+}
+.features h3{
+    color:#333;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+}
+.features span{
+    color:#555;
+    font-size: 1.3rem;
+}
+.feature{
+    background:#fff;
+    border:.1rem solid;
+    border-radius: 2rem;
+    padding:2rem;
+    display: flex;
+    align-items: center;
+    flex:1 1 25rem;
+}
+.feature:hover{
+  transform: scale(1.1);
+  box-shadow: 4px 4px #999;
+}
+
+/* Offers Styles */
+.offers .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.box-container .box{
+    flex:1 1 30%;
+    border-radius: 2rem;
+    border:.1rem solid rgba(0,0,0,.1);
+    position: relative;
+}
+.box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow:hidden;
+}
+.offers img{
+    height:25rem;
+}
+.offers .content{
+    padding:2rem;
+    text-align: center;
+}
+.offers h3{
+    font-size: 2.5rem;
+    color:#333;
+}
+.offers .price{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+.offers span{
+    font-size: 1.5rem;
+    color:#999;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+
+/* to top btn Styles */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+
+/* ---- active Rules ---- */
+.active {
+  color: blue;
+  font-weight: bolder;
+}
+.your-active-class {
+  color: red;
+    border: solid red;
+}
+
+/* media queries  */
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    #navbar__list {
+        padding:2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+    .home{
+        background-position: left;
+    }
+}
+@media (max-width:768px){
+    #navbar__list {
+        padding:1.5rem;
+        display: flex;
+        align-items: center;
+        z-index: 1000;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        background-color : #D3DFE1;
+        align-content    : right;
+        align-items      : right;
+        position         : fixed;
+        top              : 0;
+        left             : 0;
+        width            : 100vw;
+        z-index          : 1;
+        margin           : 0 auto;
+    }
+    #navbar__list li a {
+      font-size: 1.2em;
+      padding: 10px;
+      display: block;
+      color: #333;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+    }
+    .home .content h3{
+        font-size: 5rem;
+    }
+    .features-container .features h3{
+        font-size: 2rem;
+    }
+}
+@media (max-width:450px){
+  #navbar__list {
+      padding:1.5rem;
+      display: flex;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+      position: fixed;
+      left: 0;
+      width: 100vw;
+      z-index: 1;
+      margin: 0 auto;
+  }
+  #navbar__list li a {
+    font-size: 1.2em;
+    padding: 10px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+    html{
+        font-size: 50%;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+}
